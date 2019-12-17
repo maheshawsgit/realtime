@@ -1,5 +1,5 @@
 Function elifststement(){
-    source elifif.sh
+    source elif.sh
 }
 elifststement
 elifststement
