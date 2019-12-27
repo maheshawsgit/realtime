@@ -6,5 +6,10 @@ pipeline {
                 echo 'build step'
             }
         }
+        stage('qa') {
+            steps {
+                echo 'qa step'
+            }
+        }
     }
 }
