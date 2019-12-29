@@ -1,4 +1,4 @@
- def dir = script('dir')
+ def dir = script('ls')
 pipeline {
    
     agent any
