@@ -1,4 +1,4 @@
- def msg = "test"
+ def dir = powershell(returnStdout: true, script: 'dir')
 pipeline {
    
     agent any
@@ -21,7 +21,7 @@ pipeline {
         stage('powershell') {
             steps {
                
-               println msg
+               println dir
             }
         }
     }
