@@ -11,7 +11,7 @@ pipeline {
                 echo 'qa step'
             }
         }
-            stage('qa2') {
+        stage('qa2') {
             steps {
                 echo 'qa2 step'
             }
