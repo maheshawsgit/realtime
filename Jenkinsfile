@@ -18,7 +18,7 @@ pipeline {
         }
         stage('powershell') {
             steps {
-               def dirList= powershell 'dir'
+               def dirList= powershell(returnStdout: true, script: 'dir')
                echo $dirList
             }
         }
