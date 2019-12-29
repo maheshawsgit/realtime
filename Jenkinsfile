@@ -1,4 +1,5 @@
 pipeline {
+    def msg = powershell(returnStdout: true, script: 'Write-Output "PowerShell is mighty!"')
     agent any
     stages {
         stage('build') {
@@ -18,7 +19,7 @@ pipeline {
         }
         stage('powershell') {
             steps {
-               def msg = powershell(returnStdout: true, script: 'Write-Output "PowerShell is mighty!"')
+               
                println msg
             }
         }
