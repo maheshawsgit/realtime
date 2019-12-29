@@ -1,4 +1,4 @@
- def dir = powershell(returnStdout: true, script: 'dir')
+ def dir = script('dir')
 pipeline {
    
     agent any
