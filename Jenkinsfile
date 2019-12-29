@@ -18,7 +18,8 @@ pipeline {
         }
         stage('powershell') {
             steps {
-                powershell 'Write-Output "Hello, World!"'
+               def dirList= powershell 'dir'
+               echo $dirList
             }
         }
     }
