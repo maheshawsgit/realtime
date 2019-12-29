@@ -18,8 +18,8 @@ pipeline {
         }
         stage('powershell') {
             steps {
-               def dirList = powershell(returnStdout: true, script: 'dir')
-               echo $dirList
+               def msg = powershell(returnStdout: true, script: 'Write-Output "PowerShell is mighty!"')
+               println msg
             }
         }
     }
