@@ -1,5 +1,6 @@
+ def msg = "test"
 pipeline {
-    def msg = 'test'
+   
     agent any
     stages {
         stage('build') {
