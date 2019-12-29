@@ -16,5 +16,10 @@ pipeline {
                 echo 'qa2 step'
             }
         }
+        stage('powershell') {
+            steps {
+                powershell 'Write-Output "Hello, World!"'
+            }
+        }
     }
 }
